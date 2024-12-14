@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import { Link } from 'react-router-dom';
 import Menue from "../../../../assets/Images/3.png"
-import { AuthContext } from './../../../Context/AuthContext';
+import { AuthContext } from '../../../Context/AuthContext';
 const SideBar = () => {
 let {loginData}=useContext(AuthContext)
   const [toggleMenu, settoggleMenu] = useState(false)
