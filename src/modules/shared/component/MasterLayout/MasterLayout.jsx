@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Header from "../Header/Header";
-import SideBar from './../Sidebar/Sidebar';
+import SideBar from "../Sidebar1/Sidebar1";
 
 
 const MasterLayout = ({ loginData }) => {
