@@ -8,7 +8,7 @@ const ResetPass = () => {
     let {register,formState:{errors},handleSubmit}=useForm()
     const onSubmit=async (data) => {
         try {
-            let res=await axios.post("https://upskilling-egypt.com:3006/api/v1/Users/Reset",data)
+            let res=await axios.put("https://upskilling-egypt.com:3006/api/v1/Users/Reset",data)
            console.log(res);
            toast.success('Reset successfuly ')
            navigate('/login')
@@ -48,11 +48,11 @@ const ResetPass = () => {
                     <div className="input-group mt-3">
                        <span className="input-group-text" id="basic-addon1"><i className="fa fa-key" aria-hidden="true"></i></span>
                           <input 
-                          type="password" className="form-control" placeholder="OTP" aria-label="Password" aria-describedby="basic-addon1"
-                          {...register("seed",{required:"password is required"})}
+                          type="number" className="form-control" placeholder="OTP" aria-label="Password" aria-describedby="basic-addon1"
+                          {...register("seed",{required:"code is required"})}
                           />
                     </div>
-                    {errors.password && <span className="text-danger">{errors.password.message}</span>}
+                    {errors.seed && <span className="text-danger">{errors.seed.message}</span>}
                     <div className="input-group mt-3">
                        <span className="input-group-text" id="basic-addon1"><i className="fa fa-key" aria-hidden="true"></i></span>
                           <input 

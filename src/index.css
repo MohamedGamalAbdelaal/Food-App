@@ -1,11 +1,80 @@
-.Auth-container{
-    background-image: url(./assets/Images/background.png);
-    background-position: center center;
-    background-size: cover;
-}
+
 .bg-overlay{
     background: linear-gradient(45deg,rgba(47,140,96,0.7),rgba(0,0,0,0.7));
 }
 .logo-container{
     width: 100%;
+}
+.sidebar-container{
+    background-color: #1f263e;
+    border-radius: 0 58px 0 0 !important;
+}
+.side-bar{}
+.sidebar-container .ps-sidebar-container{
+    background-color: #1f263e;
+    height: 100vh;
+    border-radius: 0 58px 0 0 !important;
+}
+.ps-sidebar-root{
+    border: none !important;
+}
+.ps-sidebar-container .ps-menu-button{
+    color:#fff !important;
+}
+.ps-sidebar-container .ps-menu-button:hover{
+    background-color: rgba(47,140,96,0.9) !important;
+}
+.ps-sidebar-container .logo-menue-item :hover{
+   
+    background-color: transparent !important;
+    
+}
+.ps-menu-button{
+    margin: 30px 0;
+}
+.ps-sidebar-container .logo-menue-item img{
+    width: 150px !important;
+    height: 150px !important;
+    margin: 20px !important
+}
+.header-container{
+    background-image: url(./assets//Images/headerBg.svg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    
+}
+.text1{
+    color: #ebeaea;
+    font-weight: 300;
+}
+td{
+    padding: 20px !important;
+}
+.tbody{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !;
+}
+.header-section{
+    background-color:#F0FFEF;
+}
+.recipe-form{
+    width: 75%;
+    margin: auto;
+}
+.input-group{
+    width: 75%;
+    margin: auto;
+}
+.input-group input ,select ,textarea{
+    background-color:#F7F7F7 !important;
+    padding-block: 1rem;
+    padding-inline: .5rem;
+   
+}
+.dash-container{
+    background-color: #F0FFEF;
+
 }
